@@ -1,46 +1,10 @@
-# CodeRabbit設定ファイル
-# 詳細: https://docs.coderabbit.ai/guides/configure-coderabbit
-
-# レビュー設定
+language: "ja"
 reviews:
-  # 自動レビューを有効化
   auto_review:
     enabled: true
-
-  # レビューの詳細度
-  review_status: "auto"  # auto, draft, or never
-
-  # 高リスク変更の検出
-  high_risk_change_detection:
-    enabled: true
-
-  # パスフィルター（これらのファイルはレビューしない）
   path_filters:
-    - "!*.md"           # Markdownファイルを除外
+    - "!*.md"
     - "!package-lock.json"
     - "!*.log"
-
-# 言語設定
-language: "ja"  # 日本語でレビュー
-
-# カスタムプロンプト（オプション）
 chat:
   auto_reply: true
-
-# コメントの設定
-comments:
-  # コードの品質に関するコメントを有効化
-  code_quality: true
-  # セキュリティに関するコメントを有効化
-  security: true
-  # パフォーマンスに関するコメントを有効化
-  performance: true
-  # ベストプラクティスに関するコメントを有効化
-  best_practices: true
-
-# レビュー範囲
-scope:
-  # 変更されたファイルのみレビュー
-  auto_review_on_push: true
-  # ドラフトPRもレビュー
-  review_drafts: false
