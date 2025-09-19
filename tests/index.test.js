@@ -1,3 +1,5 @@
+// index.test.js の修正テストです。
+
 const { Calculator, StringUtils } = require('../src/index');
 
 describe('Calculator', () => {
@@ -139,4 +141,7 @@ describe('StringUtils', () => {
       expect(() => strUtils.isPalindrome(123)).toThrow(TypeError);
     });
   });
+});
+
+describe('ArrayUtils', () => { 
 });
