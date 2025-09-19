@@ -1,0 +1,10 @@
+language: "ja"
+reviews:
+  auto_review:
+    enabled: true
+  path_filters:
+    - "!*.md"
+    - "!package-lock.json"
+    - "!*.log"
+chat:
+  auto_reply: true
